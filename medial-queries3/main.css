@@ -1,3 +1,70 @@
 body {
   background: peachpuff;
 }
+
+* {
+  outline: 1px solid red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.a, .b, .c, .d, .e, .f, .g {
+  height: 15vh;
+}
+
+.b, .c, .d {
+  margin-bottom: 1em;;
+}
+
+.a {
+
+}
+
+.b {
+  width: 30%;
+}
+
+.c {
+  width: 30%;
+}
+
+.d {
+  width: 30%;
+}
+
+.e {
+  width: 30%;
+}
+
+.f {
+  width: 30%;
+}
+
+.g {
+  width: 30%;
+}
+
+.h {
+  width: 100%;
+  height: 50vh;
+}

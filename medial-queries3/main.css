@@ -2,9 +2,9 @@ body {
   background: peachpuff;
 }
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 .container {
   display: flex;
@@ -30,6 +30,7 @@ section {
 
 .a, .b, .c, .d, .e, .f, .g {
   height: 15vh;
+  background-color: lightgray;
 }
 
 .b, .c, .d {
@@ -67,4 +68,45 @@ section {
 .h {
   width: 100%;
   height: 50vh;
+  background-color: lightgray;
+}
+
+
+/* media queries */
+@media screen and (min-width: 600px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .a {
+      width: 100%;
+      height: 30vh;
+    }
+
+    main {
+      width: 100%;
+      height: 70vh;
+      justify-content: space-between;
+      margin-top: 1em;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 62%;
+      margin: 0 0 1em 0;
+    }
+
+    .h {
+      width: 35%;
+      margin-left: 1em;
+      height: 94%;
+    }
+
+    .b, .c, .d, .e, .f, .g {
+      height: 45%;
+    }
 }
